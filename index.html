@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1>calulator</h1>
+    <ol>
+        <li>ADD</li>
+        <li>SUBS</li>
+        <li>MULT</li>
+        <li>DIV</li>
+    </ol>
+    <form>
+        <input type="text" alt="enter text" id="choice">
+        <button onclick="myfun()">
+            click ME
+        </button>
+    </form>
+
+    <script type='text/javascript'>
+        function myfun() {
+            var choi = document.getElementById("choice").value;
+            switch (choi) {
+                case ("add"):
+                    var a = 10;
+                    var b = 20;
+                    var sum = a + b;
+                    document.write("addition of two number is" + sum);
+                    break;
+                case ("sub"):
+                    var a = 10;
+                    var b = 20;
+                    var sum = a - b;
+                    document.write("substration of two number is" + sum);
+                    break;
+                case ("multi"):
+                    var a = 10;
+                    var b = 20;
+                    var sum = a * b;
+                    document.write("multiplication of two number is" + sum);
+                    break;
+                case ("div"):
+                    var a = 10;
+                    var b = 20;
+                    var sum = a / b;
+                    document.write("divison of two number is" + sum);
+                    break;
+                default:
+                    alert("invalid input");
+            }
+        }
+    </script>
+</body>
+
+</html>
